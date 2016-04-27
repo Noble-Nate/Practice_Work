@@ -1,0 +1,415 @@
+
+body {
+    margin: 0px;
+    background-color: #4A4A4A;
+    color: #FFF;
+}
+h1, h2, a{
+    font-family: 'Lobster', cursive;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 48px;
+    padding: 15px 0px 15px 15px;
+    float: left;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+li {
+     list-style: none;
+}
+
+header {
+    background-color: #000;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+}
+
+.mainnav {
+    float: right;
+    padding:12px 0px;
+}
+
+.mainnav a:hover {
+    color:#899CA4;
+    text-decoration: underline;
+}
+
+.mainnav li {
+    display: inline;
+    padding:20px 20px 50px 5px;
+}
+
+.landingpage h2{
+    margin-top: 150px;
+    text-align: center;
+}
+
+#questions{
+ margin: 0 auto;
+ padding-top: 180px;
+ max-width: 900px;
+ height: 300px;
+}
+
+#aboutquestion h3, #whatquestion h3, #pquestion h3{
+    background-color: rgba(0,0,0,.4);
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#aboutquestion {
+    margin:50px;
+    width: 180px;    
+    float: left;
+}
+
+#aboutquestionshow {
+    display:inline-block;
+}
+
+#whatquestion {
+    margin:50px;
+    width: 180px;
+    float: left;
+}
+
+#skillsquestionshow{
+    display:inline-block;
+}
+
+#pquestion {
+    margin: 50px;
+    width: 180px;   
+    float: left;
+}
+
+#projectquestionshow{
+    display:inline-block;
+}
+
+#aboutquestionshow{
+        display:none;
+    }
+
+#skillsquestionshow{
+        display:none;
+    }
+
+#projectquestionshow{
+        display:none;
+    }
+
+#aboutquestionhide:hover + #aboutquestionshow{
+    display: block;
+}
+
+#skillsquestionhide:hover + #skillsquestionshow{
+    display: block;
+}
+
+#projectquestionhide:hover + #projectquestionshow{
+    display: block;
+}
+
+.clear{
+    clear: both;
+}
+
+.whowearepage{
+    position: relative;
+}
+
+.whowearepage h2{
+    margin:20px;
+}
+
+.headshots{
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.nathanielheadshot, .barbaraheadshot, 
+.franciscoheadshot, .kieleheadshot, 
+.jordanheadshot, .christinaheadshot,
+ .frankieheadshot, .bittermanheadshot,
+ .matthewheadshot{
+    max-width: 220px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.nathanielheadshot p, .barbaraheadshot p, 
+.franciscoheadshot p, .kieleheadshot p, 
+.jordanheadshot p, .christinaheadshot p, 
+.frankieheadshot p, .bittermanheadshot p,
+.matthewheadshot p {
+    text-align: center;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.animated { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+
+
+
+@keyframes bounceInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(2000px); 
+    } 
+    60% { 
+        
+        transform: translateY( 140px); 
+    } 
+    80% { 
+        transform: translateY(-10px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0px); 
+    } 
+} 
+
+.animatedrow2 { 
+    -webkit-animation-duration: 2s; 
+    animation-duration: 2s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+
+
+
+@keyframes bounceInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(2000px); 
+    } 
+    60% { 
+        
+        transform: translateY( 140px); 
+    } 
+    80% { 
+        transform: translateY(-10px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0px); 
+    } 
+} 
+
+.animatedrow3 { 
+    -webkit-animation-duration: 3s; 
+    animation-duration: 3s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+
+
+
+@keyframes bounceInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(2000px); 
+    } 
+    60% { 
+        
+        transform: translateY( 140px); 
+    } 
+    80% { 
+        transform: translateY(-10px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0px); 
+    } 
+} 
+
+
+.bounceInUp { 
+    -webkit-animation-name: bounceInUp; 
+    animation-name: bounceInUp; 
+}
+
+
+
+.whatwedopage h2 {
+    margin: 80px 20px 40px 20px;
+
+}
+
+#skillbutton{
+    margin: 0 20px 20px 90px;
+    background-color: rgba(0,0,0,.3);
+    display: block;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+}
+
+.slideouttab{
+    width: 250px;
+    height: 350px;
+    padding: 20px 0;
+    border-radius: 10px;
+    float: left;
+    display: none;
+}
+
+.skillnav {
+    text-align: center;
+    line-height: 40px;
+}
+
+.skillarea {
+    width: 800px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+.pastprojectspage h2 {
+    margin: 50px;
+
+}
+
+.projectnav {
+    width: 800px;
+    height: 50px;
+    background-color: #000;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 80px;
+}
+
+.projectnav li {
+ display: inline;
+ padding: 20px;
+ line-height: 50px;
+}
+
+.projectnav a:hover {
+    color:#899CA4;
+    text-decoration: underline;
+}
+.projectnav a:active {
+    background-color: rgba(255,255,255,0.6);
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.projectgallery{
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.projectgallery li {
+ display: inline;
+ padding: 20px;
+}
+
+.projectgallery img{
+    width: 200px;
+    margin: 5px;
+    
+}
+
+
+.contactuspage h2{
+    text-align: center;
+    margin: 40px;
+}
+
+.generalquestions {
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.generalquestions h3, .socialmedia h3{
+    font-size: 24px;
+    text-align: center;
+}
+
+.generalquestions a {
+    width: 200px;
+    margin: 20px 90px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.socialmedia {
+    text-align: center;
+}
+
+.socialmedia li{
+    display: inline;
+    padding: 8px;
+}
+
+footer {
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 150px}
+
+footer a{
+    height: 50px;
+    background-color: black;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    line-height: 50px
+}
+
+footer small{
+    display: block;
+}
+
+@media (max-width: 850px){
+    h1, h2, a{
+    font-family: 'Lobster', cursive;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 36px;
+    padding: 15px 0px 15px 15px;
+    float: left;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 12px;
+}
+}

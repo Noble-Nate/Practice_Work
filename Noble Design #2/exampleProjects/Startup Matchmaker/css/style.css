@@ -1,0 +1,325 @@
+/*
+Project Name: Startup Matchmaker
+Client: Startup
+Author: Nathaniel Naranjo AKA Noble_Nate
+Developer @GA in Santa Monica
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: rgb(0,0,0);
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background: #f0efef;
+}
+a {
+  text-decoration: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* ##### HEADER SECTION ##### */
+header {
+  background-color: rgb(0, 0, 0);
+  border-bottom: solid 5px rgb(248, 255, 0);
+  padding:15px;
+}
+
+/*##### LOGO #####*/
+header h1 {
+  padding: 10px 0 0 30px;
+}
+
+header h1 a {
+  color: rgb(248, 255, 0);
+  font-weight: 700;
+  font-size: 36px;
+}
+
+/*##### MAIN NAVIGATION #####*/
+header nav{
+  padding-left:150px;
+}
+
+header nav li {
+  display: inline;
+}
+
+header nav li a{
+  color: rgb(255,255,255);
+  font-size: 24px;
+  padding-right: 15px;
+}
+
+.hireLinks {
+  font-weight: 800;
+}
+
+/* ###### TAG LINE SECTION ###### */
+#tagLine{
+  padding: 15px 0;
+  background-color: rgb(198,198,198);
+  text-align: center;
+}
+
+#tagLine p{
+  color: rgb(0,0,0);
+  font-weight: 700;
+  font-style: italic;
+  font-size: 30px;
+}
+
+#tagLine #crossOut {
+  text-decoration: line-through;
+  color: rgb(152,153,153);
+}
+
+
+#tagLine #underLine{
+  border-bottom: solid 3px rgb(248,255,0)
+}
+
+/* ###### Gallery Section ######*/
+#gallery {
+  background:url(../images/coworking.jpg) no-repeat;
+  background-size: cover;
+  min-height: 550px;
+}
+
+#gallery aside{
+  max-width: 315px;
+  background-color: rgba(244,239,232,.8);
+  border: solid 1px black;
+  float: right;
+  margin: 100px 25px;
+}
+
+/* ###### ASIDE CONTENT SECTION ###### */
+#asideContent{
+    padding:30px 20px;
+}
+
+#asideContent h2{
+  font-weight: 800;
+  font-size: 28px;
+}
+
+#asideContent p{
+  padding: 8px 8px 50px 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#asideContent a{
+  background-color: rgb(248,255,0);
+  color: rgb(0,0,0);
+  padding: 10px 25px;
+  font-weight: 800;
+  border-radius: 5px;
+}
+
+/*####### Group Columns #######*/
+.groupColumns {
+  padding:30px 0;
+  /*FORCES PADDING ABOVE AND BELOW THE COLUMNS SO THAT 
+  BORDER RIGHT APPEARS TO FLOAT PERFECTLY IN THE MIDDLE
+  OF THE ACTION CENTER, SO THAT BORDER RIGHT IS NOT
+  PERFECTLY SEPERATING THE COLUMNS FROM EACH OTHER
+  THE INDIVIDUAL COLUMNS*/
+}
+
+
+
+/*####### COLUMN SECTIONS #######*/
+.column {
+  width: 33.33%;
+  float:left;
+  border-right: solid 1px rgb(0,0,0);
+  padding:40px 25px ;
+  text-align: justify;
+}
+
+.column h3 {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 5px;
+}
+
+.column p {
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+
+.column a{
+  background-color: rgb(198,198,198);
+  color: rgb(0,0,0);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 800;
+  border-bottom: solid 2px black;
+  display: inline-block; /*IN ORDER TO MAINTAIN BETTER FLEXABILITY OF THE BUTTONS*/
+}
+
+/*######## FOOTER SECTION #######*/
+footer{
+  background-color: rgb(0,0,0);
+  color: rgb(255,255,255);
+  padding: 15px;
+  font-size: 18px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/*########## MEDIA QUERIES SECTION ###########*/
+
+/*######## NORMAL DESKTOP 960PX QUERY ########*/
+@media (max-width:960px) {
+  /*<><><><> HEADER SECTION 960PXQ <><><><>*/
+header h1 a {
+  font-size: 24px;
+}
+
+header nav{
+  padding-left:150px;
+}
+
+header nav li a{
+  font-size: 18px;
+  padding-right: 8px;
+}
+
+/*<><><><> TAG LINE SECTION 960PXQ <><><><>*/
+#tagLine p{
+  font-weight: 700;
+  font-size: 25px;
+}
+
+/*<><><><> Aside Content Section 960PXQ <><><><>*/
+#asideContent p{
+  padding: 8px 8px 30px 8px;
+}
+
+/*<><><><> Column Sections 960PXQ<><><><>*/
+.column p {
+  font-size: 16px;
+}
+} /*END NORMAL DESKTOP*/
+ 
+/*######## Tablet 768PX QUERY ########*/
+@media (max-width: 768px) {
+
+/*<><><><> Column Sections 768PXQ <><><><>*/
+.column {
+  padding:20px 10px ;
+}
+
+.column p {
+  font-size: 14px;
+}
+
+.column a{
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+} /*END TABLET*/
+
+/*########## MOBILE 480PX QUERY ##########*/
+@media (max-width:480px){
+
+/*<><><><> Navigation Section <><><><>*/
+header nav{
+  padding-left:50px;
+}
+
+header nav li {
+  display: block;
+}
+
+header nav li a{
+  color: rgb(255,255,255);
+  font-size: 18px;
+  padding-right: 15px;
+}
+
+/*<><><><> Tagline Section <><><><>*/
+#tagLine p{
+  font-size: 20px;
+}
+
+
+/*<><><><> Gallery Section <><><><>*/
+#gallery{
+  display: none;
+}
+
+/*<><><><> COLUMN SECTIONS <><><><>*/
+.column {
+  width: 100%;
+  float:none;
+  border-right: none;
+  padding:20px 25px ;
+  text-align: justify;
+}
+
+
+.column p {
+  padding-bottom: 15px;
+}
+
+.column a{
+  padding: 20px 5px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+
+
+}
+

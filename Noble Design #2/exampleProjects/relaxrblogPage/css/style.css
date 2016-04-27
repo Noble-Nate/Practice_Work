@@ -1,0 +1,269 @@
+/* ######################################
+Project Name: Relaxr Blog
+Client: Relaxr
+Author: Nathaniel Naranjo aka Noble-Nate
+FEWD Developer @GA in Santa Monica
+####################################### */
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     background-color: #f0efef;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.dropcapletter {
+    float: left; 
+    font-size: 75px;
+    line-height: 60px;
+    padding: 15px 8px 8px 3px;
+    font-weight: 600;
+ }
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/*##### Header Section #####*/
+header {
+  background-color: rgb(4, 48, 73);
+  padding: 24px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/*## Header H1 ##*/
+header h1 {
+
+  float: left;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+header a {
+  color: rgb(255, 255, 255);
+}
+
+
+
+/*## siteNav ##*/
+header nav {
+
+  float: right;
+  padding: 5px 0;
+
+}
+
+#siteNav li {
+
+  display: inline-block;
+  padding: 0px 10px;
+
+}
+
+#siteNav a {
+  color: rgb( 249, 228, 46);
+  text-decoration: none;
+  font-weight: 600;
+}
+#siteNav a:hover{
+  color: rgb(255,255,255);
+}
+
+/*##### Articles #####*/
+
+#articles {
+
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+
+/*##### Article List #####*/
+
+#articleList {
+  width: 69%;
+  float: left;
+}
+
+
+/*##### Implement Relaxr Blog Post #####*/
+.blogPost{
+  border-bottom: 1px solid rgb(6,48,72);
+}
+
+.blogPost h2 {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 70px 0 18px 0;
+  max-width: 580px;
+  color: rgb(4, 48, 73);
+}
+
+.blogPost p {
+  color: rgb(97, 97, 97);
+  font-weight: 300;
+  font-size: 24px;
+  padding-top: 21px;
+}
+
+.blogPost a{
+  color:rgb(4,48,72);
+  text-decoration: none;
+  float: right;
+  margin: 50px 0 32px 0;
+  font-size:24px;
+  font-weight: 600;
+}
+
+.blogPost a:hover{
+  color: rgb(0, 0, 0);
+}
+
+
+
+/*##### Side Bar #####*/
+
+#sideBar {
+
+  width: 29%;
+  float: right;
+
+}
+
+/*##### Module #####*/
+.module h3{
+  font-size: 32px;
+  font-weight: 800;
+  color: rgb(3, 28, 72);
+  padding-top: 65px;
+  padding-bottom: 10px;
+}
+
+/*##### Article Categories #####*/
+
+#articleCategories a{
+  font-size: 24px;
+  font-weight: 300;
+  text-decoration: none;
+  color: rgb(3, 28, 72);
+  padding-top: 15px;
+}
+
+
+/*##### About Sidebar Section ######*/
+#aboutRelaxr p{
+  font-size: 22px;
+  font-weight: 300;
+}
+
+#aboutRelaxr a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(3, 28, 72);
+}
+
+/*####### Ad Picture ########*/
+
+#adUnit {
+  padding-top: 50px;
+}
+
+/*##### Sign Up Section #####*/
+#signUp {
+  background-color: rgb(249, 228, 46);
+  padding: 43px;
+  text-align: center;
+  margin-top: 120px;
+}
+
+#signUp a {
+  background-color:rgb(4, 48, 73);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 20px 70px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 800;
+}
+/*##### Footer Section #####*/
+footer {
+  padding: 30px 0;
+  background-color: rgb(18, 18, 17);
+  text-align: center;
+}
+
+footer a{
+  color: rgb(249, 228, 46);
+  display: block;
+  font-size: 50px;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.socialMedia {
+  margin: 40px;
+}
+
+.socialMedia a {
+  display: inline;
+  padding: 20px;
+}
+
+footer small{
+  color: rgb(241, 239, 238);
+  display: block;
+  padding-top: 40px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/******************************************
+/* ADDITIONAL STYLES*/
+

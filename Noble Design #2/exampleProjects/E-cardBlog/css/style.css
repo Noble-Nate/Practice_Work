@@ -1,0 +1,297 @@
+/*
+Project Name: E-Card Blog
+Client: E-Card
+Author: Nathaniel Naranjo aka Noble_Nate
+Developer @GA in Santa Monica
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+   -moz-box-sizing: border-box; /* Firexfox */
+-webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+        box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+content: ".";
+display: block;
+clear: both;
+visibility: hidden;
+line-height: 0;
+height: 0;
+}
+
+.clear {
+clear: both;
+}
+
+.alignright {
+float: right;
+padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+float: left;
+padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+color: #000;
+font-size: 100%;
+line-height: 1.4;
+font-family: "Open Sans", sans-serif;
+font-weight: 300;
+background-color: rgb(214,214,214);
+}
+a {
+text-decoration: none;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/*<><><><> HEADER SECTION <><><><>*/
+
+header {
+background: url("../images/background.jpg") repeat-x;
+}
+
+#logo {
+margin: 0 auto;
+max-width: 200px;
+}
+
+#logo img {
+min-width: 100%;
+}
+
+
+/*<><><><> Min Navigation Section <><><><>*/
+
+#min-navigation {
+width: 80%;
+margin: 0 auto;
+padding: 20px 10px;
+background-color: rgb(255,255,255);
+z-index: 5;
+position: relative;
+top: 5px;
+}
+
+#min-navigation nav ul li {
+display: inline;
+text-align: center;
+}
+
+#min-navigation nav ul li a {
+color: rgb(255,255,255);
+background-color: rgb(80,80,80);
+padding: 8px;
+border-radius: 5px;
+border-bottom: solid 4px rgb(50,50,50);
+font-size: 1.5em;
+width: 45%;
+font-weight: 700;
+}
+
+#min-navigation nav ul li a:hover {
+border: solid 2px rgb(0,0,0);
+}
+
+#archivebutton {
+float: left;
+}
+
+#blogbutton {
+float: right;
+}
+
+/*<><><><> NAVIGATION DROP SECTION <><><><>*/
+.slideoutmenu{
+	width: 80%;
+	background-color:#FFFFFF;
+	border-bottom: solid 5px #E35424;
+	border-radius: 10px;
+	margin: 0 auto;
+	/*display: none;*/
+}
+
+.slideoutmenu a{
+	color: rgb(10,10,10);
+}
+
+.archiveDrop{
+	text-align: center;
+	width: 48%;
+	float:left;
+	display: inline-block;
+}
+
+.blogrollDrop{
+	display: inline-block;
+	text-align: center;
+	width: 48%;
+	float:right;
+}
+
+.
+/*<><><><> SOCIAL NAVIGATION SECTION <><><><>*/
+
+#socialNav{
+
+}
+
+#socialNav ul {
+width: 80%;
+margin:5% auto;
+}
+
+#socialNav li {
+display: inline;
+padding: 1%;
+float: right;
+}
+
+
+/*<><><><> Side Bar <><><><>*/
+.sideBar {
+	display:none;
+}
+
+
+/*<><><><> ARTICLES SECTION <><><><>*/
+
+
+
+/*<><><><> BLOG POST SECTION <><><><>*/
+.blogpost {
+margin: 2%;
+background-color: #FFFFFF;
+}
+
+.blogpost h2 {
+padding: 5%;
+}
+
+.blogpost h2 a {
+font-size: 1.5em;
+color: rgb(20,20,20);
+}
+
+.blogpost img {
+width: 100%;
+padding: 0 5% 5% 5%;
+}
+
+.blogpost p {
+padding: 5%;
+}
+
+.readMore {
+color: rgb(247,68,25);
+font-weight: 700;
+font-size: 1.2em;
+}
+
+.blogMetafooter {
+/*background-color: maroon;*/
+padding: 5%;
+}
+
+.dashedbox {
+border-top: dotted 2px black;
+border-bottom: solid 1px black;
+font-size: .7em;
+}
+
+.dashedbox a {
+color: rgb(247,68,25);
+
+}
+
+/*<><><><> FOOTER SOCIAL <><><><>*/
+#footerSocial {
+	display: none;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+@media screen and (min-width: 768px) {
+	
+	#min-navigation{
+		display: none;
+	}
+
+	.slideoutmenu{
+		display:none;
+	}
+
+	#socialNav{
+		display: none;
+	}
+
+	#footerSocial {
+		display: block;
+	}
+	
+	#footerSocial ul{
+		margin-left: 45%
+	}
+
+	#footerSocial li{
+		display: inline;
+	}
+
+	.articles{
+		width: 75%
+	}
+
+	.sideBar {
+	display:block;
+	width: 22%;
+	float: right;
+	margin-right:2%;
+	}
+
+	.sideBar aside{
+		background-color: #FFFFFF;
+	}
+
+	.sideBar aside img{
+		width: 80%;
+	}
+	.sideBar a{
+		color: rgb(0,0,0);
+		margin: 2%
+	}
+
+	.sideBar h3 {
+		font-size: 1.5em;
+		margin: 0 3% 3%;
+	}
+	.sideBar img{
+		margin: 5%
+	}
+
+}
+
+
+
+
+

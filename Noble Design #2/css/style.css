@@ -1,0 +1,464 @@
+/*UNIVERSAL*/
+
+body {
+    font-size: 100%;
+    line-height: 1.4;
+    color: rgb(36, 33, 34);
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.btn {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(26, 28, 26);
+    text-decoration: none;
+    background-color:rgba(45, 46, 42,.2);
+}
+
+.btn:hover {
+    border: 1px solid aqua;
+    background-color:
+
+}
+
+
+
+
+/*<><><> SPLASH <><><>*/
+
+.splash {
+    background-color:RGB(51, 129, 145);
+    width: 100%;
+    padding: 100px 0;
+}
+
+.splash__logo {
+    margin: 0 auto;
+    width: 30%;
+    display: block;
+}
+
+.splash__title, .splash__sub-title {
+    text-align: center;
+    color: #fff;
+    padding:3% 0 0;
+    margin: 0;
+}
+
+
+
+/*<><><> MAIN NAV <><><>*/
+
+.mainNav {
+    background-color: #414141;
+    padding: 8px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11200;
+}
+
+.mainNav__nav {
+    color: #fff;
+    padding-right:20px;
+
+}
+
+.mainNav__mobile-nav {
+    border: 1px #fff solid;
+    padding:5px;
+    float: left;
+    position: relative;
+    top: 15px;
+}
+.mainNav__mobile-nav-a {
+
+}
+
+.mainNav__mobile-title{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 2.8em;
+}
+
+.mainNav__mobile-nav-p{
+    margin: 0;
+    display: inline;
+    font-weight: 600;
+    width: 100%;
+}
+
+.mainNav__nav-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+
+}
+
+.mainNav__nav-li {
+    padding: 10px;
+}
+
+.mainNav__nav-a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.mainNav__nav-li:last-child {
+
+}
+
+.mainNav__nav-a {
+}
+
+
+/*<><><> ABOUT <><><>*/
+
+.about {
+    background-color: #46939F;
+}
+
+.about__title {
+    margin:0 0 40px 0;
+    padding:30px;
+    font-size:2em;
+}
+
+.about__headshot {
+    margin: 0 auto;
+    width: 0;
+    position: relative;
+    right: 80px;
+}
+
+.about__headshot-img {}
+
+.about__details {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about__details-p {
+    padding: 5px;
+}
+
+.about__details-p:first-letter{
+
+}
+
+.about__view-resume {
+    margin: 0;
+    padding: 0;
+    width: 10px;
+}
+
+.about__download-resume {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.about__download-resume-btn {
+
+}
+
+
+
+/*<><><> SKILLS <><><>*/
+
+.skills {
+    background-color: #46939F;
+}
+
+.skills__title {
+    margin:0 ;
+    padding:30px;
+    font-size:2em;
+}
+
+
+/*<><><> WORK <><><>*/
+
+.work {
+    background-color: #46939F;
+}
+
+.work__title {
+    margin:0 0 40px 0;
+    padding:30px;
+    font-size:2em;
+}
+
+.work__examples{
+
+}
+
+.work__examples-row{
+    width: 100%;
+}
+
+.work__examples-column{
+    width: 40%;
+    height:100%;
+    display: inline;
+    float: left;
+    padding: 5%;
+    text-align:center;
+}
+
+.work__examples-column-img{
+    width: 100%;
+    height: 40%;
+}
+
+.work__examples-column-title {
+    font-size: 1.5em;
+}
+
+.work__examples-column-p {
+
+}
+
+.work__examples-column-a {
+
+}
+
+
+/*<><><> FAQ <><><>*/
+
+.FAQ {
+    background-color: #46939F;
+}
+
+.FAQ__title {
+    margin:0;
+    padding:30px;
+    font-size:2em;
+}
+
+.FAQ__slides {
+
+}
+
+/*<><><> CONTACT <><><>*/
+
+.contact {
+    background-color: #46939F;
+}
+
+.contact__title {
+    margin: 0;
+    padding:25% 10%;
+    font-size:2em;
+}
+
+.contact__social{
+
+}
+.contact__social-ul{
+    width: 100%;
+}
+.contact__social-li{
+    display: inline;
+
+}
+.contact__social-a {
+    color: #fff;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+.contact__social-a:hover {
+    color: #00FFFF;
+}
+
+
+.contact__letter {
+    background-color:rgba(45, 46, 42,.2);
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 0;
+    position: relative;
+    bottom:80px;
+}
+
+.contact__letter-form {
+    padding: 0 5%;
+    text-align: center;
+}
+
+.contact__letter-form-input {
+    display: block;
+}
+.contact__letter-form-row {
+    width: 100%;
+}
+
+#firstname {
+    float: left;
+    width: 40%;
+    height: 30px;
+    padding: 10px;
+    font-size: 1.3em;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    background-color: #3E7F88;
+    outline: none;
+}
+
+#firstname:hover , #firstname:focus {
+    border-bottom: solid 2px #00FFFF;
+}
+
+#lastname {
+    float: right;
+    width: 40%;
+    height: 30px;
+    padding: 10px;
+    font-size: 1.3em;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    background-color: #3E7F88;
+    outline: none;
+}
+
+#lastname:hover , #lastname:focus {
+    border-bottom: solid 2px #00FFFF;
+}
+
+#email {
+    width: 80%;
+    height: 30px;
+    padding: 10px;
+    font-size: 1.3em;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    background-color: #3E7F88;
+    margin: 20px;
+    outline: none;
+}
+
+#email:hover , #email:focus {
+    border-bottom: solid 2px #00FFFF;
+}
+
+#companytypedrop {
+    width: 90%;
+    height: 30px;
+    padding: 20px;
+    font-size: .9em;
+    border: solid 2px #c9c9c9;
+    background-color: #3E7F88;
+    margin: 20px;
+    outline: none;
+}
+
+#companytypedrop:hover , #companytypedrop:focus {
+    border: solid 2px #00FFFF;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    font-size: 1em;
+    border: solid 2px #c9c9c9;
+    background-color: #3E7F88;
+    margin: 20px;
+    outline: none;
+}
+
+textarea:hover , textarea:focus {
+    border: solid 2px #00FFFF;
+}
+
+.contact__letter-form-submit {
+    display: block;
+    margin: 0 auto;
+}
+
+/*<><><> FOOTER <><><>*/
+
+.footer {
+    background-color: rgb(65, 65, 65);
+    text-align: center;
+    padding: 50px;
+}
+
+.footer__small {
+    font-size: .8em;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+/*<><><> OTHER <><><>*/
+
+
+
+.main {
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.testpage {
+    width: 100%;
+}
+
+.testimage {
+    width: 100%;
+    height: 90%;
+}
+
+/*<><><> MEDIA QUERY <><><>*/
+@media only screen and (min-width: 960px) {
+    .mainNav {
+        padding: 0 8px;
+    }
+
+    .mainNav__mobile-title {
+        float: left;
+        position: relative;
+        top:15px;
+    }
+
+    .mainNav__mobile-nav {
+        display:none;
+    }
+
+    .mainNav__nav-ul {
+        float: right;
+        display:inline-block !important;
+        position: relative;
+        top: -30px;
+    }
+
+    .mainNav__nav-li {
+        display:inline;
+    }
+
+    .mainNav__nav-a {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    .mainNav__nav-a:hover {
+        color:#00FFFF;
+        text-decoration: underline;
+    }
+}

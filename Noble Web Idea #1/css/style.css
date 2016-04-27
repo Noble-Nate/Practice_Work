@@ -1,0 +1,192 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Developered by Nathaniel Naranjo AKA Noble_Nate
+*/
+
+
+/*<><><><><><><><><><><><><><><><><><><><><><><>*/
+/*<>                1 - SETUP                 <>*/
+/*<><><><><><><><><><><><><><><><><><><><><><><>*/
+
+/* <><><> 1 A - BOX MODEL HACK <><><> */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* <><><> 1 B - CLEAR FIX HACK <><><> */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/*<><><><><><><><><><><><><><><><><><><><><><><>*/
+/*<>              2 - BASE STYLES             <>*/
+/*<><><><><><><><><><><><><><><><><><><><><><><>*/
+
+body {
+  font-size: 16px;
+  line-height: 1.4;
+  color: rgb(217, 216, 210);
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background-color: rgb(69, 102, 116);
+}
+
+a {
+  text-decoration: none;
+  color:rgb(217, 216, 210);
+}
+
+.floatingBox {
+  background-color: rgb(62, 95, 116);
+  padding: 2%;
+  box-shadow: 0 8px 30px -5px #333;
+  width:90%;
+  margin: 8% auto;
+  border-radius: 5px;
+}
+
+/*<><><><><><><><><><><><><><><><><><><><><><><>*/
+/*<>              3 - LAYOUT                  <>*/
+/*<><><><><><><><><><><><><><><><><><><><><><><>*/
+
+/*<><><> 3 A - HEADER SECTION <><><>*/
+
+header {
+  background-color: rgb(62, 95, 116);
+  padding: 2%;
+  box-shadow: 0 8px 30px -5px #333;
+}
+
+header h1{
+  margin: 0;
+  font-size: 2em;
+  text-shadow: -5px 4px 10px rgb(0,0,0);
+  float: right;
+}
+
+/*<><><> 3 B - CONTENT SLIDER SECTION <><><>*/
+
+#contentSlide {
+  float: left;
+  font-size: 2em;
+  position: relative;
+  top: 8px;
+  text-shadow: -4px 4px 10px rgb(0,0,0);
+}
+
+/*<><><> 3 C - MAIN NAVIGATION SECTION <><><>*/
+
+nav#mainNav{
+  display: none;
+}
+
+/*<><><> 3 D - VIDEO DETAILS SECTION <><><>*/
+
+section#videoDetails h2{
+  float: left;
+  font-size: 2em;
+  padding-left: 3%;
+}
+
+
+#uploader{
+  position: relative;
+  top: 20px;
+  right: 10px;
+}
+
+#uploaderProfile {
+  background-color: rgb(189, 191, 186);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  float: right;
+}
+
+#uploaderProfile i {
+  font-size: 2.5em;
+  color: rgb(0, 0, 0);
+  text-shadow: -4px 3px 8px rgb(50,50,50);
+  position: relative;
+  left: 12px;
+  top: 6px;
+}
+
+/*<><><> 3 E - VIDEO PLAYER SECTION <><><>*/
+#centerTheStupidVideoAlready{
+  width: 90%;
+  margin: 0 auto;
+}
+
+#videoPlayer {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; 
+  height: 0;
+  overflow: hidden;
+}
+ 
+#videoPlayer iframe,
+#videoPlayer object,
+#videoPlayer embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*<><><> 3 F - VIDEO ACTION SECTION  <><><>*/
+.videoActionColumn{
+  float: left;
+  width: 33%;
+  text-align: center;
+  border-right: solid 1px rgb(50,50,50);
+  background-color: maroon;
+}
+
+/*<><><> 3 G - VIDEO DISCRIPTION SECTION <><><>*/
+
+section#videoDiscription {
+  width: 90%;
+  margin: 0 auto;
+}
+
+section#videoDiscription a {
+  float: right;
+  color:rgb(189, 191, 186);
+  border-bottom: solid 1px rgb(230,230,230);
+}
+
+/*<><><> 3  H - DOWNLOAD VIDEO SECTION <><><>*/
+section#downloadVideo ul{
+  list-style: none;
+}
+
+/*<><><><><><><><><><><><><><><><><><><><><><><>*/
+/*<>          4 - ADDITIONAL STYLES           <>*/
+/*<><><><><><><><><><><><><><><><><><><><><><><>*/
+
+

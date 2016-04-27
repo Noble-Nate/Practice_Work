@@ -1,0 +1,299 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Nathaniel Naranjo AKA Noble_Nate
+*/
+
+
+/*<><><><><><><><><><><><><><><><><><><><><><>*/
+/*<>                SETUP                   <>*/
+/*<><><><><><><><><><><><><><><><><><><><><><>*/
+
+/*<><><><> Box Model Hack <><><>*/
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/*<><><><> Clear fix <><><><>*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+
+/*<><><><><><><><><><><><><><><><><><><><><><>*/
+/*<>             BASE STYLES                <>*/
+/*<><><><><><><><><><><><><><><><><><><><><><>*/
+
+
+body {
+  color: #043049;
+  font-size: 100%;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: url("../images/bg_wrapper.png")repeat-x;
+}
+
+a {
+  text-decoration: none;
+}
+
+#mainContent {
+  background: url("../images/bg_body.jpg");
+}
+
+
+/*<><><><><><><><><><><><><><><><><><><><><><>*/
+/*<>                 Layout                 <>*/
+/*<><><><><><><><><><><><><><><><><><><><><><>*/
+
+
+/*<><><><> MAIN NAVIGATION SECTION <><><><>*/
+#mainNav ul{
+  padding: 2%
+}
+
+#mainNav ul li{
+  display:inline;
+  padding: 2%;
+}
+
+#mainNav ul li:hover{
+   background: url("../images/bg_nav_rollover.png");
+}
+
+#mainNav ul li a{
+  color: rgb(245,245,245);
+}
+
+#mainNav ul li a:hover {
+     color:#8ECEF9;
+}
+
+/*<><><><> MAIN CONTENT SECTION <><><><>*/
+
+
+/*<><><><> HEADER LOGO SECTION <><><><>*/
+
+#logoImage {
+  padding:  3% 2%;
+  float: left;
+}
+
+/*<><><><> SOCIAL MEDIA LIST <><><><>*/
+
+#socialmediaList {
+  float: right;
+  padding: 2%;
+}
+
+#socialmediaList img {
+  width:20px;
+}
+
+/*<><><><> GALLERY SECTION <><><><>*/
+#gallery img{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
+/*<><><><> CALL TO ACTION SECTION <><><><>*/
+
+#calltoaction {
+  background: url("../images/bg_blurb.jpg");
+  background-size: cover;
+  width: 80%;
+  margin: 0 auto;
+  border-top: solid 2px #CBCBCB;
+  border-left: solid 1px #CBCBCB;
+  border-bottom: solid 1px #FCFCFC;
+  border-right: solid 2px #FCFCFC;
+}
+
+#calltoaction p {
+  font-size: .8em;
+  padding: 2%;
+  max-width: 75%;
+  display:inline-block;
+  float: left;
+}
+
+#quoteBtn {
+  float: right;
+  padding: 2%;
+}
+
+/*<><><><> COLUMN SECTION <><><><>*/
+
+.columnSections {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+#middleColumn{
+}
+
+.columnSections h2 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+
+.columnSections img{
+  width: 100%;
+  border:solid 4px #E2E2E2;
+}
+
+.columnSections p{
+  font-size: .7em;
+}
+
+.columnSections a{
+  color: #51AAE7;
+  padding: 1%;
+  font-size: .7em;
+}
+
+/*<><><><> FOOTER SECTION <><><><>*/
+footer{
+  background-color: #020202;
+  padding: 10% 2%;
+}
+
+footer h3{
+  color: #A9B6BE;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+footer a, footer p, footer small{
+  color: #474946;
+  /*color: #C1C5C6;*/
+}
+
+/*<><><><> FOOTER ROW SECTION <><><><>*/
+.footerrow{
+  width: 100%;
+  padding: 3%;
+}
+
+.footerColumns {
+  width: 28%;
+  margin-left: 2%;
+  float:left;
+}
+
+.footerColumns li {
+  border-bottom: solid 1px #1E1E1E;
+}
+
+.footerColumns li a{
+  padding: 5%;
+}
+
+/*<><><><> SMALL FOOTER SECTION <><><><>*/
+
+
+
+#copyright {
+  float: left;
+  font-size: .7em;
+  padding-top:5%;
+}
+
+#acknowledgement {
+  float: right;
+  font-size: .7em;
+  padding-top: 5%;
+}
+
+#acknowledgement a{
+  color: #1B69BE;
+}
+
+
+/*<><><><><><><><><><><><><><><><><><><><><><>*/
+/*<>          ADDITIONAL STYLE              <>*/
+/*<><><><><><><><><><><><><><><><><><><><><><>*/
+
+
+@media screen and (min-width: 600px){
+
+/*<><> TURNS COLUMN SECTION INTO ACTUAL COLUMS <><>*/
+
+/*<><><><> COLUMNS SECTION <><><><>*/
+.columnRow {
+  width: 100%;
+  padding: 3%;
+}
+
+.columnSections {
+  width: 32%;
+  margin-left: 1%;
+  float:left;
+}
+
+.columnSections h2 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.columnSections img{
+  width: 100%;
+  border:solid 4px #E2E2E2;
+}
+
+.columnSections p{
+  font-size: .7em;
+}
+
+.columnSections a{
+  color: #51AAE7;
+  padding: 1%;
+  font-size: .7em;
+}
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+/*<><>TURN SOCIAL MEDIA LIST INTO FULL SIZE<><>*/
+
+/*<><><><> SOCIAL MEDIA LIST <><><><>*/
+#socialmediaList li{
+  display: inline-block;
+}
+
+ #socialmediaList img {
+  width:100%
+}
+
+}
+
+
+
