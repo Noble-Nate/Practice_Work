@@ -1,0 +1,191 @@
+@import "_colors.scss";
+@import "_font.scss";
+
+//General Rules and Styles
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body{
+  line-height: 1.5em;
+  font-size: 100%;
+}
+
+h1, h2, h3, p{
+  color: $fColor;
+}
+
+img{
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 15px auto;
+}
+
+#embedResume {
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a{
+  color: $lColor;
+  text-decoration: none;
+}
+
+header{
+    background-color: $bgColor;
+}
+
+// Logo Section
+
+.logo {
+  float: left;
+}
+
+.logo h1 {
+  font-size: $h1;
+  margin: 0;
+  padding-top: 20px;
+  color: $logoColor;
+}
+
+.logo h2{
+  font-size: $h2;
+  color: $subColor;
+  margin:10px 0 0 5px;
+}
+
+// Nav Section
+
+.mainNav{
+  float:right;
+}
+
+.mainNav li{
+  display: inline;
+}
+
+.mainNav a:hover{
+  text-decoration: underline;
+}
+
+// Description Section
+
+.description{
+  padding:10px;
+}
+
+.description h2,h3,p,li{
+  color: $fColor;
+}
+
+
+.description h2{
+  text-align: center;
+  font-size: $h2;
+  margin-bottom:0;
+}
+
+.description h3{
+  text-align:center;
+  font-size: $h3;
+  margin-top: 8px;
+}
+
+.description li{
+  list-style: square;
+  padding: 5px 0;
+}
+
+// Footer Section
+
+footer{
+  background-color: $bgColor;
+}
+
+.resume {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.resume a {
+  padding: 8px;
+  border: 1px solid black;
+  transition: all .5s;
+}
+
+.resume a:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+// Media Queries
+
+@media screen and (max-width: 360px){
+
+  .resume a{
+    display:inline-block;
+    margin: 10px;
+  }
+
+  #or{
+    display:none;
+  }
+
+}
+
+@media screen and (max-width: 450px){
+
+  .logo {
+    float: none;
+    text-align: center;
+  }
+
+  .mainNav ul{
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  .mainNav li{
+    padding:0 10px;
+    position: relative;
+    right: 20px;
+  }
+
+  .mainNav{
+    float:none;
+  }
+}
+
+@media screen and (min-width: 758px){
+
+  header{
+  //  padding: 0px 0;
+  }
+
+  .logo{
+    padding:20px 20px 0 20px;
+  }
+
+  .mainNav {
+    padding: 2em;
+  }
+
+  .mainNav ul{
+    background-color: $navColor;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 2em;
+    }
+
+  .mainNav li{
+    padding:20px 15px;
+  }
+
+
+}

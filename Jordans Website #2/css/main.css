@@ -1,0 +1,130 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+body {
+  line-height: 1.5em;
+  font-size: 100%; }
+
+h1, h2, h3, p {
+  color: #333; }
+
+img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 15px auto; }
+
+#embedResume {
+  margin: 0 auto; }
+
+li {
+  list-style: none; }
+
+a {
+  color: #999;
+  text-decoration: none; }
+
+header {
+  background-color: #252B39; }
+
+.logo {
+  float: left; }
+
+.logo h1 {
+  font-size: 3em;
+  margin: 0;
+  padding-top: 20px;
+  color: #1423E3; }
+
+.logo h2 {
+  font-size: 2em;
+  color: #D4C420;
+  margin: 10px 0 0 5px; }
+
+.mainNav {
+  float: right; }
+
+.mainNav li {
+  display: inline; }
+
+.mainNav a:hover {
+  text-decoration: underline; }
+
+.description {
+  padding: 10px; }
+
+.description h2, h3, p, li {
+  color: #333; }
+
+.description h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 0; }
+
+.description h3 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-top: 8px; }
+
+.description li {
+  list-style: square;
+  padding: 5px 0; }
+
+footer {
+  background-color: #252B39; }
+
+.resume {
+  text-align: center;
+  padding: 80px 0; }
+
+.resume a {
+  padding: 8px;
+  border: 1px solid black;
+  transition: all .5s; }
+
+.resume a:hover {
+  background-color: #fff;
+  color: #000; }
+
+@media screen and (max-width: 360px) {
+  .resume a {
+    display: inline-block;
+    margin: 10px; }
+
+  #or {
+    display: none; } }
+@media screen and (max-width: 450px) {
+  .logo {
+    float: none;
+    text-align: center; }
+
+  .mainNav ul {
+    text-align: center;
+    margin-top: 2em; }
+
+  .mainNav li {
+    padding: 0 10px;
+    position: relative;
+    right: 20px; }
+
+  .mainNav {
+    float: none; } }
+@media screen and (min-width: 758px) {
+  .logo {
+    padding: 20px 20px 0 20px; }
+
+  .mainNav {
+    padding: 2em; }
+
+  .mainNav ul {
+    background-color: #4A4A4A;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 2em; }
+
+  .mainNav li {
+    padding: 20px 15px; } }
+
+/*# sourceMappingURL=main.css.map */
