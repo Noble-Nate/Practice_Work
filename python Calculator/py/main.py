@@ -13,4 +13,4 @@ tip_float = percent(tip)
 meal_total = meal_int + meal_int * tax_float
 total = meal_total + meal_total * tip_float
 
-print total
+print("%.2f" % total)
