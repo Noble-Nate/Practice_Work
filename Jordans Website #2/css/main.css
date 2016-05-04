@@ -79,6 +79,17 @@ header {
   font-size: 1.8em;
   margin-top: 70px; }
 
+.projects h3 {
+  font-size: 1.8em; }
+
+.projects p, .projects h3 {
+  padding: 0 200px;
+  text-align: center; }
+
+.video {
+  text-align: center;
+  width: 100%; }
+
 footer {
   background-color: #252B39; }
 
@@ -101,7 +112,10 @@ footer {
     margin: 10px; }
 
   #or {
-    display: none; } }
+    display: none; }
+
+  .projects p, .projects h3 {
+    padding: 0; } }
 @media screen and (max-width: 450px) {
   .logo {
     float: none;
@@ -117,7 +131,10 @@ footer {
     right: 20px; }
 
   .mainNav {
-    float: none; } }
+    float: none; }
+
+  .projects p, .projects h3 {
+    padding: 0; } }
 @media screen and (min-width: 758px) {
   .logo {
     padding: 20px 20px 0 20px; }

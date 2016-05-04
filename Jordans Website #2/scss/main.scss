@@ -113,6 +113,21 @@ header{
   margin-top: 70px;
 }
 
+// Projects Section
+
+.projects h3{
+  font-size: $h3;
+}
+
+.projects p, .projects h3 {
+  padding: 0 200px;
+  text-align: center;
+}
+
+.video {
+  text-align: center;
+  width: 100%;
+}
 
 // Footer Section
 
@@ -150,7 +165,9 @@ footer{
   #or{
     display:none;
   }
-
+.projects p, .projects h3 {
+  padding: 0;
+}
 }
 
 @media screen and (max-width: 450px){
@@ -173,6 +190,10 @@ footer{
 
   .mainNav{
     float:none;
+  }
+
+  .projects p, .projects h3 {
+    padding: 0;
   }
 }
 
