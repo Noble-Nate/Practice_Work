@@ -72,6 +72,13 @@ header {
   list-style: square;
   padding: 5px 0; }
 
+.contact {
+  text-align: center; }
+
+.contact p {
+  font-size: 1.8em;
+  margin-top: 70px; }
+
 footer {
   background-color: #252B39; }
 

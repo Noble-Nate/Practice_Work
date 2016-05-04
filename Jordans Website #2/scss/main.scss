@@ -102,6 +102,18 @@ header{
   padding: 5px 0;
 }
 
+// Contact Section
+
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  font-size: $h3;
+  margin-top: 70px;
+}
+
+
 // Footer Section
 
 footer{
@@ -123,6 +135,8 @@ footer{
   background-color: #fff;
   color: #000;
 }
+
+
 
 // Media Queries
 
